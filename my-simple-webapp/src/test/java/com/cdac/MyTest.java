@@ -18,6 +18,7 @@ public class MyTest {
 		String expected = "Welcome to my website!";
 		String actual = driver.findElement(By.tagName("h1")).getText();
 		assertEquals(expected, actual);
+		driver.close();
 	}
 
 }
